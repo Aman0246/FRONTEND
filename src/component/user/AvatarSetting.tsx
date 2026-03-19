@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import $ from "jquery";
+// import $ from "jquery";
 // import CoverImg from "../../assets/images/userSettingCover.png";
 import { useSelector } from "react-redux";
 import { updateFakeUser } from "../../store/userSlice";
@@ -13,9 +13,9 @@ interface AvatarSettingProps {
 }
 
 const AvatarSetting: React.FC<AvatarSettingProps> = (props) => {
-  $("input[type='image']").click(function () {
-    $("input[id='my_file']").click();
-  });
+  // $("input[type='image']").click(function () {
+  //   $("input[id='my_file']").click();
+  // });
   useClearSessionStorageOnPopState("multiButton");
 
   const { userProfileData } = props;
@@ -58,7 +58,7 @@ const AvatarSetting: React.FC<AvatarSettingProps> = (props) => {
   useEffect(() => {
     setUserId(userProfileData?._id || "");
     setIsChannel(userProfileData?.isChannel || false);
-    setImageShow( userProfileData?.image || "");
+    setImageShow(userProfileData?.image || "");
   }, [userProfileData, getUserProfileData]);
 
   return (

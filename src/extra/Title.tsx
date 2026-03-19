@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
-import $ from "jquery";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import MultiButton from "./MultiButton";
 import moment from 'moment';

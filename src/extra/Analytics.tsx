@@ -5,6 +5,16 @@ import dayjs from "dayjs";
 import $ from "jquery";
 
 export default function Analytics(props: any) {
+
+
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const $ = require("jquery");
+      $("data-range-key").removeClass("active");
+      $("[data-range-key='ALL']").addClass("active");
+    }
+  }, []);
   const {
     analyticsStartDate,
     analyticsStartEnd,
