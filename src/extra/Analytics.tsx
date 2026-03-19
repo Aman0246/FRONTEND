@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-const DateRangePicker = dynamic(() => import("react-bootstrap-daterangepicker"), {
+const DateRangePicker = dynamic<any>(() => import("react-bootstrap-daterangepicker"), {
   ssr: false,
 });
 import moment from "moment";
