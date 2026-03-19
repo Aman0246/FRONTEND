@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import moment from "moment";
 import dayjs from "dayjs";
-import $ from "jquery";
+// import $ from "jquery";
 
 export default function Analytics(props: any) {
 
