@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
-import DateRangePicker from "react-bootstrap-daterangepicker";
+import dynamic from "next/dynamic";
+const DateRangePicker = dynamic(() => import("react-bootstrap-daterangepicker"), {
+  ssr: false,
+});
 import MultiButton from "./MultiButton";
 import moment from 'moment';
 
