@@ -1,7 +1,7 @@
 "use client";
 // import Logo from "../../assets/images/shorty-logo 1.png";
 
-import "../../assets/js/custom";
+// import "../../assets/js/custom";
 import Navigator from "../../extra/Navigator";
 // import $ from "jquery";
 import DownArrow from "../../assets/icons/DownArrow.svg";
