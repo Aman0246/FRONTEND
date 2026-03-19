@@ -59,7 +59,17 @@ export default function Registration() {
 
     setLoading(true); // Disable button immediately
 
-    const payload = { email, password, newPassword, code };
+    // const payload = { email, password, newPassword, code };
+    const payload = {
+      adminId: "", // or get from somewhere if required
+      data: {
+        email,
+        password,
+        newPassword,
+        code,
+      },
+    };
+
 
     dispatch(signUpAdmin(payload))
       .unwrap() // ✅ convert thunk to a promise
