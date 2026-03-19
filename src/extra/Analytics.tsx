@@ -10,7 +10,7 @@ export default function Analytics(props: any) {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const $ = require("jquery");
+      // const $ = require("jquery");
       $("data-range-key").removeClass("active");
       $("[data-range-key='ALL']").addClass("active");
     }

@@ -1,7 +1,7 @@
 "use client";
 // import Logo from "../../assets/images/shorty-logo 1.png";
 
-// import "../../assets/js/custom";
+import "../../assets/js/custom";
 import Navigator from "../../extra/Navigator";
 // import $ from "jquery";
 import DownArrow from "../../assets/icons/DownArrow.svg";
@@ -230,18 +230,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
 
   const [totalPage, setTotalPage] = useState(20);
 
-  // useEffect(() => {
-  //   const mediaQuery = window.matchMedia("(max-width: 768px)");
-  //   if (mediaQuery?.matches) {
-  //     $(".sideBar.mobSidebar").removeClass("mobSidebar");
-  //     $(".sideBar").addClass("webSidebar");
-  //   }
-  //   $(".mobSidebar-bg").removeClass("responsive-bg");
-  // }, []);
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const $ = require("jquery");
-
     const mediaQuery = window.matchMedia("(max-width: 768px)");
     if (mediaQuery?.matches) {
       $(".sideBar.mobSidebar").removeClass("mobSidebar");
@@ -757,12 +746,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
 export default Sidebar;
 
 export const Script = (props: any) => {
-
-
-
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const $ = require("jquery");
     const handleClick = (event: any) => {
       const target = $(event.currentTarget);
       const submenu = target.next(".subMenu");
